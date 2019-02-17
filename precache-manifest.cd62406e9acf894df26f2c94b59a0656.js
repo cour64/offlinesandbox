@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "65c854f83f747708a9f9",
+    "revision": "532d4b4c2a177ee54e55",
     "url": "/offlinesandbox/static/css/main.f321690e.chunk.css"
   },
   {
-    "revision": "65c854f83f747708a9f9",
-    "url": "/offlinesandbox/static/js/main.65c854f8.chunk.js"
+    "revision": "532d4b4c2a177ee54e55",
+    "url": "/offlinesandbox/static/js/main.532d4b4c.chunk.js"
   },
   {
     "revision": "3b37b3cc58fe7c4f1c21",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/offlinesandbox/static/media/Inconsolata-Bold.b0312789.ttf"
   },
   {
-    "revision": "259a083abdc33dbf096f45946848b1c4",
+    "revision": "f7ef829bba4736c205a310e43c4b90f9",
     "url": "/offlinesandbox/index.html"
   }
 ];
