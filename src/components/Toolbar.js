@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect, useRef } from 'react';
+import React, { useContext, useRef } from 'react';
 import { Dispatch } from '../Sandbox';
 
 import './Toolbar.scss';
@@ -22,8 +22,6 @@ export default function Toolbar()  {
   }
 
   function addToHomeScreen(e) {
-    // hide our user interface that shows our A2HS button
-    a2hs.style.display = 'none';
     // Show the prompt
     window.addToHomeScreen.prompt();
     // Wait for the user to respond to the prompt
@@ -37,6 +35,11 @@ export default function Toolbar()  {
         window.addToHomeScreen = null;
       });
   }
+
+  window.addEventListener('appinstalled', (evt) => {
+    // hide our user interface that shows our A2HS button
+    a2hs.style.display = 'none';
+  });
 
   return (
     <div id="Toolbar">
