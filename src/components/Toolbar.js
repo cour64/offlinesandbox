@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from 'react';
+import React, { useContext } from 'react';
 import { Dispatch } from '../Sandbox';
 
 import './Toolbar.scss';
@@ -19,26 +19,6 @@ export default function Toolbar()  {
       editMode:false
     });
   }
-
-  /*function addToHomeScreen(e) {
-    // Show the prompt
-    window.addToHomeScreen.prompt();
-    // Wait for the user to respond to the prompt
-    window.addToHomeScreen.userChoice
-      .then((choiceResult) => {
-        if (choiceResult.outcome === 'accepted') {
-          console.log('User accepted the A2HS prompt');
-        } else {
-          console.log('User dismissed the A2HS prompt');
-        }
-        window.addToHomeScreen = null;
-      });
-  }
-
-  window.addEventListener('appinstalled', (evt) => {
-    // hide our user interface that shows our A2HS button
-    a2hs.style.display = 'none';
-  });*/
 
   return (
     <div id="Toolbar">

@@ -21,24 +21,11 @@ function Editor({language, code}) {
       code:e.target.value
     });
   }
-
-  function onKeyDown(e) {
-    // require for mobile devices that don't use proper apostrophe's
-    if(e.key === 222) {
-      e.preventDefault();
-
-      const start = e.target.selectionStart;
-      e.target.value = e.target.slice(0, start) + '\'' + e.target.slice(start);
-
-      onChange(e);
-    }
-  }
   
   return (
     <pre className={`Editor line-numbers language-${language}`}>
       <code ref={codeElement} className={`language-${language}`}>{code}</code>
       <textarea
-        onKeyDown={onKeyDown}
         onChange={onChange}
         value={code}
         spellCheck="false"
