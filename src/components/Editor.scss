@@ -1,0 +1,64 @@
+@import '../assets/styles/fonts';
+
+pre.Editor {
+  position:absolute;
+  top:0;
+  left:0;
+  margin:0;
+  border-radius:0 !important;
+}
+
+pre[class*="language-"].line-numbers.Editor {
+  padding-left:2.5em;
+}
+
+pre.Editor,
+pre.Editor > code {
+  height:100%;
+  width:100%;
+
+  font-family:Inconsolata, source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size:1em;
+  line-height:1;
+
+  overflow-x:auto;
+
+  white-space:pre;
+  word-break: break-all;
+  word-wrap:break-word;
+}
+
+pre.Editor > textarea {
+  position:absolute;
+  overflow:hidden;
+
+  box-sizing:border-box;
+  border:none;
+
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  resize: none;
+
+  background-color:transparent;
+  -webkit-text-fill-color:transparent;
+  caret-color:#FFF;
+
+
+  /* Inherit from parent pre */
+  /* all:inherit */
+  padding:inherit;
+  padding-left:inherit;
+
+  line-height:inherit;
+
+  font-family:inherit;
+  font-size:inherit;
+
+  text-align:inherit;
+  white-space:pre;
+  word-spacing:inherit;
+  word-break:inherit;
+  word-wrap:inherit;
+}
